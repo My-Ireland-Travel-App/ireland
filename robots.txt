@@ -1,0 +1,5 @@
+# A hosted journal is private content on a public URL. Free hosting has no
+# password option, so this asks crawlers to stay away. It is a request, not
+# an enforcement — treat the URL itself as the only real barrier.
+User-agent: *
+Disallow: /

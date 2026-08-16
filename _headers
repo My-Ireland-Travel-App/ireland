@@ -1,0 +1,11 @@
+# Netlify reads this file and applies these headers to every response.
+/*
+  # Stops the journal being framed inside someone else's page
+  X-Frame-Options: DENY
+  # Don't leak the journal's URL to the map tile and font providers
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  # The app never needs these; deny them outright
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=()
+  # Belt and braces alongside the meta tag in the page itself
+  X-Robots-Tag: noindex, nofollow
